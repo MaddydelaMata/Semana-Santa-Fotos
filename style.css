@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f3e9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .formulario-container {
+    margin-top: 40px;
+  }
+  
+  input[type="text"], input[type="file"] {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #7a4c25;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #5c3a1a;
+  }
+  
+  .certificado-container {
+    margin-top: 40px;
+  }
+  
+  .certificado {
+    position: relative;
+    width: 360px;
+    height: 640px; /* Formato vertical */
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #d0b894;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  
+  .fondo {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+  }
+  
+  .titulo {
+    font-size: 28px;
+    color: #7a4c25;
+    margin-top: 10px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .foto {
+    width: 80%;
+    height: 280px; /* Más alto para que se vea la foto completa */
+    object-fit: cover;
+    margin-top: 15px;
+    z-index: 1;
+    position: relative;
+    border-radius: 16px;
+    border: 3px solid #7a4c25;
+  }
+  
+  
+  .nombre {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #333;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .mensaje {
+    font-size: 16px;
+    margin: 10px 20px;
+    color: #444;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .firma {
+    font-size: 14px;
+    margin-top: auto;
+    color: #7a4c25;
+    font-style: italic;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  

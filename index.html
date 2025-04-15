@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificado Semana Santa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="formulario-container">
+    <h1>Formulario de Certificado</h1>
+    <p>Completa tus datos para generar tu certificado de Semana Santa.</p>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+    <input type="file" id="foto" accept="image/*">
+    
+    <!-- Selector para el fondo -->
+    <form>
+      <label for="fondo">Elige un fondo para tu certificado:</label>
+      <select id="fondo" onchange="cambiarFondo()">
+        <option value="img/fondo semana santa.jpg">Fondo 1</option>
+        <option value="img/fondo semana santa 2.jpg">Fondo 2</option>
+        <option value="img/fondo semana santa 3.jpg">Fondo 3</option>
+      </select>
+    </form>
+    
+    <button onclick="generarCertificado()">Generar Certificado</button>
+  </div>
+
+  <div class="certificado-container" id="certificado" style="display:none;">
+    <div class="certificado" id="certificado-content">
+      <img id="fondoCertificado" src="img/fondo semana santa.jpg" alt="Fondo Semana Santa" class="fondo">
+      <h1 class="titulo">SEMANA SANTA</h1>
+      <p class="mensaje">Un tiempo para reflexionar, perdonar y compartir paz con los demás.</p>
+      <img id="fotoMostrada" class="foto" src="" alt="Tu foto">
+      <h2 id="nombreMostrado" class="nombre"></h2>
+      
+      <!-- Mensaje institucional -->
+      <p class="firma">Con fe y esperanza, te acompaña la I.E.P. Pascal Blaise</p>
+
+      <!-- Logo -->
+      <img src="img/logo 2 .png" alt="Logo del colegio" class="logo" id="logo">
+    </div>
+    <button onclick="descargarImagen()" id="descargarBtn" style="display:none;">Descargar Certificado</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
